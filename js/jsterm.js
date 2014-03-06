@@ -394,7 +394,7 @@
       _typeKey: function(key) {
          var stdout = this.stdout();
 
-         if (!stdout || key < 0x20 || key > 0x7E || key == 13 || key == 9)
+         if (!stdout || key < 0x20 || key == 13 || key == 9)
             return;
 
          stdout.innerHTML += String.fromCharCode(key);
